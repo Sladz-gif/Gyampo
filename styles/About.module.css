@@ -1,0 +1,459 @@
+.hero {
+    background: linear-gradient(135deg, #F7F9FB 0%, #FFFFFF 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.photoBioSection {
+    background: white;
+}
+
+.photoBioContent {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.photoSection {
+    display: flex;
+    justify-content: center;
+}
+
+.photoPlaceholder {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    background: linear-gradient(135deg, #1A4BFF 0%, #FFD34E 100%);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.photoPlaceholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+}
+
+.photoText {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    z-index: 1;
+    position: relative;
+}
+
+.photoSubtext {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 8px;
+    opacity: 0.9;
+    z-index: 1;
+    position: relative;
+}
+
+.bioSection h2 {
+    margin-bottom: 24px;
+}
+
+.bioSection p {
+    margin-bottom: 20px;
+    color: #6C7A89;
+    line-height: 1.7;
+}
+
+.journeySection {
+    background: #F7F9FB;
+}
+
+.journeyContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.journeyTimeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.journeyTimeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #1A4BFF, #FFD34E);
+}
+
+.timelineItem {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 40px;
+}
+
+.timelineIcon {
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 3px solid #1A4BFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.timelineContent h3 {
+    margin-bottom: 8px;
+    color: #1E1E1E;
+}
+
+.timelineContent p {
+    color: #6C7A89;
+    line-height: 1.6;
+}
+
+.leadershipSection {
+    background: white;
+}
+
+.leadershipContent {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.leadershipGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.leadershipCard {
+    background: #F7F9FB;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #E1E6ED;
+}
+
+.leadershipCard h3 {
+    margin-bottom: 16px;
+    color: #1A4BFF;
+}
+
+.leadershipCard p {
+    margin-bottom: 20px;
+    color: #6C7A89;
+    line-height: 1.6;
+}
+
+.leadershipList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leadershipList li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    color: #6C7A89;
+}
+
+.leadershipList li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #1A4BFF;
+    font-weight: bold;
+}
+
+.valuesSection {
+    background: #F7F9FB;
+}
+
+.valuesContent {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.valuesGrid {
+    margin-top: 40px;
+}
+
+.valueCard {
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.valueCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 75, 255, 0.05) 0%, rgba(255, 211, 78, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.valueCard:hover::before {
+    opacity: 1;
+}
+
+.valueIcon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.valueCard h3 {
+    margin-bottom: 12px;
+    color: #1E1E1E;
+}
+
+.valueCard p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.quoteSection {
+    background: linear-gradient(135deg, #1A4BFF 0%, #0d3ce6 100%);
+    color: white;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.quoteSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    opacity: 0.3;
+}
+
+.quoteContent {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.quoteAuthor {
+    font-size: 1rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 60px;
+    }
+
+    .photoBioContent {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .photoPlaceholder {
+        max-width: 250px;
+        height: 300px;
+    }
+
+    .journeyTimeline {
+        padding-left: 20px;
+    }
+
+    .journeyTimeline::before {
+        left: 10px;
+    }
+
+    .timelineItem {
+        padding-left: 30px;
+    }
+
+    .timelineIcon {
+        left: -20px;
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .leadershipGrid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .leadershipCard {
+        padding: 24px;
+    }
+
+    .valuesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .quote {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 0 40px;
+    }
+
+    .photoPlaceholder {
+        max-width: 200px;
+        height: 250px;
+    }
+
+    .photoText {
+        font-size: 1.25rem;
+    }
+
+    .photoSubtext {
+        font-size: 0.8rem;
+    }
+
+    .leadershipCard {
+        padding: 20px;
+    }
+}
+
+/* Vision & Mission Section */
+.visionMissionSection {
+    padding: 4rem 0;
+    background: var(--gray-50);
+}
+
+.visionMissionGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .visionMissionGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.visionCard,
+.missionCard {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--gray-200);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cardIcon {
+    width: 3rem;
+    height: 3rem;
+    background: var(--primary-100);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.visionPoints {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 480px) {
+    .visionPoints {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.visionPoint {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: var(--primary-50);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.pointIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+}
+
+.missionGoals {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.missionGoal h4 {
+    color: var(--primary-700);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.missionGoal p {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}

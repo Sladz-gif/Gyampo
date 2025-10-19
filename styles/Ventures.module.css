@@ -1,0 +1,570 @@
+.hero {
+    background: linear-gradient(135deg, #F7F9FB 0%, #FFFFFF 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.heroStats {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 40px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.statNumber {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1A4BFF;
+    line-height: 1;
+}
+
+.statLabel {
+    display: block;
+    font-size: 0.9rem;
+    color: #6C7A89;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.filterSection {
+    background: white;
+    border-bottom: 1px solid #E1E6ED;
+}
+
+.filterContent {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.categoryFilters {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.categoryFilter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: 2px solid #E1E6ED;
+    border-radius: 25px;
+    background: white;
+    color: #6C7A89;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.categoryFilter:hover {
+    border-color: #1A4BFF;
+    color: #1A4BFF;
+}
+
+.categoryFilter.active {
+    border-color: #1A4BFF;
+    background: #1A4BFF;
+    color: white;
+}
+
+.filterIcon {
+    font-size: 1.2rem;
+}
+
+.filterLabel {
+    font-size: 0.9rem;
+}
+
+.venturesSection {
+    background: #F7F9FB;
+}
+
+.venturesContent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.venturesGrid {
+    margin-top: 40px;
+}
+
+.ventureCard {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ventureCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 75, 255, 0.05) 0%, rgba(255, 211, 78, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ventureCard:hover::before {
+    opacity: 1;
+}
+
+.ventureImage {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #1A4BFF 0%, #FFD34E 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.imagePlaceholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+}
+
+.placeholderText {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.statusBadge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.statusBadge.active {
+    background: rgba(16, 185, 129, 0.9);
+    color: white;
+}
+
+.statusBadge.pilot {
+    background: rgba(255, 211, 78, 0.9);
+    color: #1E1E1E;
+}
+
+.statusBadge.development {
+    background: rgba(26, 75, 255, 0.9);
+    color: white;
+}
+
+.ventureContent {
+    position: relative;
+    z-index: 1;
+}
+
+.ventureHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.ventureHeader h3 {
+    margin: 0;
+    color: #1E1E1E;
+    flex: 1;
+}
+
+.categoryTag {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 12px;
+    white-space: nowrap;
+}
+
+.categoryTag.tech {
+    background: rgba(26, 75, 255, 0.1);
+    color: #1A4BFF;
+}
+
+.categoryTag.health {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10B981;
+}
+
+.categoryTag.social {
+    background: rgba(255, 211, 78, 0.1);
+    color: #B45309;
+}
+
+.categoryTag.education {
+    background: rgba(139, 92, 246, 0.1);
+    color: #8B5CF6;
+}
+
+.venturePitch {
+    color: #6C7A89;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.ventureMeta {
+    margin-bottom: 20px;
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.metaLabel {
+    font-size: 0.9rem;
+    color: #6C7A89;
+    font-weight: 500;
+}
+
+.metaValue {
+    font-size: 0.9rem;
+    color: #1E1E1E;
+    font-weight: 500;
+}
+
+.ventureActions {
+    position: relative;
+    z-index: 1;
+}
+
+.noResults {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.noResultsIcon {
+    font-size: 4rem;
+    margin-bottom: 24px;
+}
+
+.noResults h3 {
+    margin-bottom: 16px;
+    color: #1E1E1E;
+}
+
+.noResults p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ctaSection {
+    background: linear-gradient(135deg, #1A4BFF 0%, #0d3ce6 100%);
+    color: white;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    opacity: 0.3;
+}
+
+.ctaContent {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ctaContent h2 {
+    margin-bottom: 16px;
+}
+
+.ctaContent p {
+    margin-bottom: 32px;
+    opacity: 0.9;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ctaButtons .btn {
+    background: white;
+    color: #1A4BFF;
+    border: 2px solid white;
+}
+
+.ctaButtons .btn:hover {
+    background: transparent;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.ctaButtons .btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.ctaButtons .btn-secondary:hover {
+    background: white;
+    color: #1A4BFF;
+}
+
+.modalContent {
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E1E6ED;
+}
+
+.modalHeader h3 {
+    margin: 0;
+    color: #1E1E1E;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #6C7A89;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+    background: #F7F9FB;
+    color: #1E1E1E;
+}
+
+.modalBody {
+    margin-bottom: 24px;
+}
+
+.modalImage {
+    margin-bottom: 24px;
+}
+
+.modalImage .imagePlaceholder {
+    height: 200px;
+}
+
+.modalDetails {
+    margin-bottom: 24px;
+}
+
+.detailRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.detailLabel {
+    font-weight: 600;
+    color: #1E1E1E;
+    min-width: 100px;
+    margin-right: 12px;
+}
+
+.detailValue {
+    color: #6C7A89;
+}
+
+.modalPitch {
+    margin-bottom: 24px;
+}
+
+.modalPitch h4 {
+    margin-bottom: 12px;
+    color: #1E1E1E;
+}
+
+.modalPitch p {
+    color: #6C7A89;
+    line-height: 1.6;
+}
+
+.modalSupport h4 {
+    margin-bottom: 12px;
+    color: #1E1E1E;
+}
+
+.modalSupport ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modalSupport li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: #6C7A89;
+}
+
+.modalSupport li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #1A4BFF;
+    font-weight: bold;
+}
+
+.modalActions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    padding-top: 16px;
+    border-top: 1px solid #E1E6ED;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 60px;
+    }
+
+    .heroStats {
+        gap: 32px;
+    }
+
+    .statNumber {
+        font-size: 2rem;
+    }
+
+    .categoryFilters {
+        gap: 12px;
+    }
+
+    .categoryFilter {
+        padding: 10px 16px;
+    }
+
+    .filterLabel {
+        font-size: 0.8rem;
+    }
+
+    .venturesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ventureHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categoryTag {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ctaButtons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .modalActions {
+        flex-direction: column;
+    }
+
+    .modalActions .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 0 40px;
+    }
+
+    .heroStats {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .categoryFilters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categoryFilter {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+
+    .ventureCard {
+        padding: 16px;
+    }
+
+    .imagePlaceholder {
+        height: 150px;
+    }
+
+    .placeholderText {
+        font-size: 0.9rem;
+    }
+}
+

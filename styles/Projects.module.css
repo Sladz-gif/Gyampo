@@ -1,0 +1,314 @@
+.hero {
+    background: linear-gradient(135deg, #F7F9FB 0%, #FFFFFF 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tabsSection {
+    background: white;
+}
+
+.tabsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tabHeader {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tabHeader h2 {
+    margin-bottom: 16px;
+}
+
+.projectsGrid,
+.researchGrid {
+    margin-top: 40px;
+}
+
+.projectCard {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.projectCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 75, 255, 0.05) 0%, rgba(255, 211, 78, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.projectCard:hover::before {
+    opacity: 1;
+}
+
+.projectHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.projectHeader h3 {
+    margin: 0;
+    color: #1E1E1E;
+    flex: 1;
+}
+
+.categoryTag {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 12px;
+    white-space: nowrap;
+}
+
+.categoryTag.health {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10B981;
+}
+
+.categoryTag.tech {
+    background: rgba(26, 75, 255, 0.1);
+    color: #1A4BFF;
+}
+
+.categoryTag.social {
+    background: rgba(255, 211, 78, 0.1);
+    color: #B45309;
+}
+
+.categoryTag.fintech {
+    background: rgba(0, 255, 136, 0.1);
+    color: #00FF88;
+}
+
+.projectTagline {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #1A4BFF;
+    margin-bottom: 16px;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.projectDescription {
+    color: #6C7A89;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.projectDetails {
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.detailSection {
+    margin-bottom: 20px;
+}
+
+.detailSection h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+}
+
+.detailSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detailSection li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 6px;
+    color: #6C7A89;
+    font-size: 0.9rem;
+}
+
+.detailSection li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #1A4BFF;
+    font-weight: bold;
+}
+
+.detailSection p {
+    color: #6C7A89;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.projectActions {
+    position: relative;
+    z-index: 1;
+}
+
+.researchCard {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.researchCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 75, 255, 0.05) 0%, rgba(255, 211, 78, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.researchCard:hover::before {
+    opacity: 1;
+}
+
+.researchHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.researchHeader h3 {
+    margin: 0;
+    color: #1E1E1E;
+    flex: 1;
+}
+
+.researchType {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 12px;
+    white-space: nowrap;
+    background: rgba(26, 75, 255, 0.1);
+    color: #1A4BFF;
+}
+
+.researchAuthor {
+    color: #1A4BFF;
+    font-weight: 500;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.researchYear {
+    color: #6C7A89;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.researchAbstract {
+    color: #6C7A89;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+.modalContent {
+    padding: 32px;
+}
+
+.modalContent h3 {
+    margin-bottom: 16px;
+    color: #1E1E1E;
+}
+
+.modalContent p {
+    color: #6C7A89;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.modalActions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 60px;
+    }
+
+    .projectsGrid,
+    .researchGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .projectHeader,
+    .researchHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categoryTag,
+    .researchType {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .modalContent {
+        padding: 24px;
+    }
+
+    .modalActions {
+        flex-direction: column;
+    }
+
+    .modalActions .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 0 40px;
+    }
+
+    .projectCard,
+    .researchCard {
+        padding: 16px;
+    }
+
+    .modalContent {
+        padding: 20px;
+    }
+}

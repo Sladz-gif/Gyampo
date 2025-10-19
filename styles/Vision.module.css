@@ -1,0 +1,364 @@
+.hero {
+    background: linear-gradient(135deg, #F7F9FB 0%, #FFFFFF 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.visionMissionSection {
+    background: white;
+}
+
+.panelsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.panel {
+    background: #F7F9FB;
+    border-radius: 16px;
+    padding: 40px;
+    border: 1px solid #E1E6ED;
+    position: relative;
+    overflow: hidden;
+}
+
+.panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 75, 255, 0.05) 0%, rgba(255, 211, 78, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.panel:hover::before {
+    opacity: 1;
+}
+
+.visionPanel {
+    border-left: 4px solid #1A4BFF;
+}
+
+.missionPanel {
+    border-left: 4px solid #FFD34E;
+}
+
+.panelHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.panelIcon {
+    font-size: 2rem;
+    margin-right: 16px;
+}
+
+.panelHeader h2 {
+    margin: 0;
+    color: #1E1E1E;
+}
+
+.panelContent {
+    position: relative;
+    z-index: 1;
+}
+
+.panelContent p {
+    margin-bottom: 20px;
+    color: #6C7A89;
+    line-height: 1.7;
+}
+
+.visionPoints {
+    margin-top: 24px;
+}
+
+.visionPoint {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #6C7A89;
+}
+
+.pointIcon {
+    font-size: 1.2rem;
+    margin-right: 12px;
+    width: 24px;
+    text-align: center;
+}
+
+.missionGoals {
+    margin-top: 24px;
+}
+
+.missionGoal {
+    margin-bottom: 20px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    border: 1px solid rgba(26, 75, 255, 0.1);
+}
+
+.missionGoal h4 {
+    margin-bottom: 8px;
+    color: #1A4BFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.missionGoal p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6C7A89;
+}
+
+.valuesSection {
+    background: #F7F9FB;
+}
+
+.valuesContent {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.valuesGrid {
+    margin-top: 40px;
+}
+
+.valueCard {
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.valueCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 75, 255, 0.05) 0%, rgba(255, 211, 78, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.valueCard:hover::before {
+    opacity: 1;
+}
+
+.valueIcon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.valueCard h3 {
+    margin-bottom: 12px;
+    color: #1E1E1E;
+}
+
+.valueCard p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.impactSection {
+    background: white;
+}
+
+.impactContent {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.impactGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.impactCard {
+    text-align: center;
+    padding: 32px 20px;
+    background: #F7F9FB;
+    border-radius: 12px;
+    border: 1px solid #E1E6ED;
+    transition: all 0.3s ease;
+}
+
+.impactCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.impactNumber {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1A4BFF;
+    margin-bottom: 8px;
+}
+
+.impactLabel {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+}
+
+.impactCard p {
+    color: #6C7A89;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.ctaSection {
+    background: linear-gradient(135deg, #1A4BFF 0%, #0d3ce6 100%);
+    color: white;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    opacity: 0.3;
+}
+
+.ctaContent {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ctaContent h2 {
+    margin-bottom: 16px;
+}
+
+.ctaContent p {
+    margin-bottom: 32px;
+    opacity: 0.9;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ctaButtons .btn {
+    background: white;
+    color: #1A4BFF;
+    border: 2px solid white;
+}
+
+.ctaButtons .btn:hover {
+    background: transparent;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.ctaButtons .btn-accent {
+    background: #FFD34E;
+    color: #1E1E1E;
+    border-color: #FFD34E;
+}
+
+.ctaButtons .btn-accent:hover {
+    background: transparent;
+    color: #FFD34E;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 60px;
+    }
+
+    .panelsContainer {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .panel {
+        padding: 24px;
+    }
+
+    .valuesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .impactGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .impactCard {
+        padding: 24px 16px;
+    }
+
+    .impactNumber {
+        font-size: 2rem;
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ctaButtons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 80px 0 40px;
+    }
+
+    .panel {
+        padding: 20px;
+    }
+
+    .panelIcon {
+        font-size: 1.5rem;
+    }
+
+    .impactGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .impactCard {
+        padding: 20px 16px;
+    }
+
+    .impactNumber {
+        font-size: 1.75rem;
+    }
+}
+
